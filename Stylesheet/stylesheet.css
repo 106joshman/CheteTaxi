@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+header {
+  background: #083048;
+}
+
+.top-logo{
+    color: white;
+    /* margin-right: 10px; */
+}
+
+.nav-bar{
+    width: 100%;
+    align-items: center;
+    padding: 10px 5px;
+    background-color: #083048;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+}
+
+.nav-bar a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Add an active class to highlight the current page */
+.nav-bar a.active {
+  background-color: #0;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.nav-bar .icon {
+  display: none;
+}*
+
+/* Hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+.nav-bar a:not(:first-child){
+    display: none;
+}
+
+.nav-bar a.icon {
+    float: right;
+    display: block;
+}
+
+main {
+  padding: 5px 20px 0;
+  margin: auto;
+}
+
+h2 {
+  color: #203848;
+  text-align: center;
+  margin: 1.5em 1em;
+}
+
+p {
+  margin: 1em;
+  line-height: 1.6;
+}
+
+.last a {
+  text-decoration: none;
+  color: #203848;
+  font-weight: bold;
+}
+
+.light {
+  border: 1px solid grey;
+  padding: 8px;
+  margin: 1em 2em 2em;
+  width: 80%;
+  position: relative;
+}
+
+main h2{
+    text-align: center;
+    margin-top: 3em;
+    font-weight: normal;
+}
+
+.images{
+    align-items: center;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.post{
+    border: 1px solid gray;
+    padding: 1em 12px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images h5{
+    text-align: center;    margin-top: 1em;
+    font-weight: normal;
+}
+
+.images a{
+  color: black;
+}
+
+button{
+  width: 180px;
+  height: 35px;
+  color: white;
+  background: #002030;
+  border: none;
+  margin-top: 1em;
+}
+
+footer{
+  background: #002030;
+  text-align: center;
+  color: white;
+/*  font-size: small;*/
+  padding-top: 3.5em;
+}
+
+footer a{
+  display: block;
+  margin: 15px 0;
+}
+
+.attribution {
+  font-size: 13px;
+  background: #002030;
+  text-align: center;
+  /* margin-bottom: 1em; */
+  color: white;
+}
+
+.attribution a {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .logo{
+    visibility: hidden;
+  }
+
+  header{
+    height: 3.5em;
+  }
+
+  .top{
+    width: 100%;
+  }
+
+  .light{
+  width: 40%;
+  left: 58%;
+  }
+
+  .images{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post{
+    width: 100%;
+  }
+
+  .post img {
+    width: 100%;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .link{
+    text-align: start;
+  }
+
+  .name{
+    text-align: start;
+    font-size: smaller;
+  }
+
+  footer img{
+    width: 30%;
+  }
+}
